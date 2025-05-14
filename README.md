@@ -70,7 +70,7 @@ The plot will display \(\hat{\Gamma}_{\mathrm{eff}}\) vs \(\hat{\nu}\) for sever
 
 ## 🔧 Customization
 
-You can adjust the following in `mpl_gamma_eff_plot.py`:
+You can adjust the following in `main.py`:
 
 ```python
 k = 0.10                            # Surface energy ratio
