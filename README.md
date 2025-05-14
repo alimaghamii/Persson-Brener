@@ -1,4 +1,4 @@
-# Modified Power Law Viscoelastic Model: Effective Surface Energy
+# Modified Power Law Viscoelastic Model: Effective Surface Energy through Persson and Brener
 
 This repository provides a Python implementation to compute and visualize the **dimensionless effective surface energy** \(\hat{\Gamma}_{\mathrm{eff}}\) for a **viscoelastic material** modeled using the **Modified Power Law (MPL)** (
 ML WILLIAMS, AIAA journal, 1964) framework through the Persson and Brener theory (BNJ Persson, EA Brener, Physical Review E, 2005). It is based on the analytical model introduced in:
