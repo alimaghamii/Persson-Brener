@@ -32,7 +32,7 @@ The resulting plot displays how \(\hat{\Gamma}_{\mathrm{eff}}\) varies with the 
 
 ```
 .
-├── mpl_gamma_eff_plot.py       # Main script to compute and plot Gamma_eff vs nu
+├── main.py       # Main script to compute and plot Gamma_eff vs nu
 ├── example_plot.png            # Sample output image
 └── README.md                   # You're here!
 ```
@@ -58,17 +58,10 @@ pip install numpy matplotlib mpmath
 
 ## 🚀 How to Use
 
-Clone the repository:
-
-```bash
-git clone https://github.com/<your-username>/mpl-viscoelastic-adhesion.git
-cd mpl-viscoelastic-adhesion
-```
-
 Run the main script:
 
 ```bash
-python mpl_gamma_eff_plot.py
+python main.py
 ```
 
 The plot will display \(\hat{\Gamma}_{\mathrm{eff}}\) vs \(\hat{\nu}\) for several values of \(n\).
