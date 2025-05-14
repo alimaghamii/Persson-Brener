@@ -93,4 +93,4 @@ plt.title(r"$\hat{\Gamma}_{\mathrm{eff}}$ vs. $\hat{\nu}$"
 plt.grid(True, which="both", ls=":")
 plt.legend(title="Power-law exponent", fontsize=10)
 plt.tight_layout()
-plt.show()
+plt.savefig("example_plot.png", dpi=300)
