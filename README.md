@@ -1,4 +1,4 @@
-# Modified Power Law Viscoelastic Model: Effective Surface Energy through Persson and Brener
+# Modified Power Law Viscoelastic Model: Effective Surface Energy through Persson and Brener theory
 
 This repository provides a Python implementation to compute and visualize the **dimensionless effective surface energy** \(\hat{\Gamma}_{\mathrm{eff}}\) for a **viscoelastic material** modeled using the **Modified Power Law (MPL)** (
 ML WILLIAMS, AIAA journal, 1964) framework through the Persson and Brener theory (BNJ Persson, EA Brener, Physical Review E, 2005). It is based on the analytical model introduced in:
@@ -32,7 +32,7 @@ The resulting plot displays how \(\hat{\Gamma}_{\mathrm{eff}}\) varies with the 
 
 ```
 .
-├── mpl_gamma_eff_plot.py       # Main script to compute and plot Gamma_eff vs nu
+├── main.py       # Main script to compute and plot Gamma_eff vs nu
 ├── example_plot.png            # Sample output image
 └── README.md                   # You're here!
 ```
@@ -58,17 +58,10 @@ pip install numpy matplotlib mpmath
 
 ## 🚀 How to Use
 
-Clone the repository:
-
-```bash
-git clone https://github.com/<your-username>/mpl-viscoelastic-adhesion.git
-cd mpl-viscoelastic-adhesion
-```
-
 Run the main script:
 
 ```bash
-python mpl_gamma_eff_plot.py
+python main.py
 ```
 
 The plot will display \(\hat{\Gamma}_{\mathrm{eff}}\) vs \(\hat{\nu}\) for several values of \(n\).
@@ -77,12 +70,12 @@ The plot will display \(\hat{\Gamma}_{\mathrm{eff}}\) vs \(\hat{\nu}\) for sever
 
 ## 🔧 Customization
 
-You can adjust the following in `mpl_gamma_eff_plot.py`:
+You can adjust the following in `main.py`:
 
 ```python
-k = 0.10                            # Surface energy ratio
+k = 0.10                            # E_\inft/E_0 known as madulus ratio
 n_list = [0.2, 0.4, 0.6, 0.8, 1.6]  # Power-law exponents to compare
-nu_min, nu_max = 1e-2, 1e8         # Range for dimensionless rate \hat{\nu}
+nu_min, nu_max = 1e-2, 1e8         # Range for dimensionless crack velocity \hat{\nu}
 num_points = 200                   # Number of samples per curve
 ```
 
