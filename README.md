@@ -3,12 +3,12 @@
 This repository provides a Python implementation to compute and visualize the **dimensionless effective surface energy** \(\hat{\Gamma}_{\mathrm{eff}}\) for a **viscoelastic material** modeled using the **Modified Power Law (MPL)** (
 ML WILLIAMS, AIAA journal, 1964) framework through the Persson and Brener theory (BNJ Persson, EA Brener, Physical Review E, 2005). It is based on the analytical model introduced in:
 
-Note: the model covers viscoelastic broad band behavior and it also covers Standard Linear Solid (SLS) model through n=1.6. 
-
 > **Maghami, A., et al.**  
 > *"Bulk and fracture process zone contribution to the rate-dependent adhesion amplification in viscoelastic broad-band materials."*  
 > *Journal of the Mechanics and Physics of Solids*, Vol. 193, 2024, 105844.  
 > [https://doi.org/10.1016/j.jmps.2024.105844](https://doi.org/10.1016/j.jmps.2024.105844)
+
+Note: the model covers viscoelastic broad band behavior and it also covers Standard Linear Solid (SLS) model through n=1.6. 
 
 ---
 
