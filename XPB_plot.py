@@ -23,10 +23,6 @@ ru_min, ru_max = 1e-2, 1e10         # Unloading rate range
 num_points = 200                   # Grid resolution
 # ----------------------------------------------------------
 
-# Conversion constants (from paper)
-C1 = 2.887
-C2 = 3.24 * np.pi**(2/3)
-
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
@@ -64,7 +60,7 @@ def I_value(n, nu, Gamma):
 
     return pre * (term1 + term2)
 
-def gamma_eff(n, k, nu, tol=1e-10, max_iter=200):
+def gamma_eff_PB(n, k, nu, tol=1e-10, max_iter=200):
     Gamma = 1.0
     for _ in range(max_iter):
         I = I_value(n, nu, Gamma)
@@ -82,8 +78,11 @@ ru_vals = np.logspace(np.log10(ru_min), np.log10(ru_max), num_points)
 plt.figure(figsize=(8, 5))
 for n in n_list:
     # Convert r_u to ν̂
+    # Conversion constants (from paper)
+    C1 = 2.887
+    C2 = 3.24 * np.pi**(2/3)
     nu_vals = C1 * ((ru_vals / C2) ** 1.171)
-    gamma_vals = np.array([gamma_eff(n, k, nu) for nu in nu_vals])
+    gamma_vals = np.array([gamma_eff_PB(n, k, nu) for nu in nu_vals])
     plt.loglog(ru_vals, gamma_vals, label=fr"$n = {n}$")
 
 plt.xlabel(r"Unloading Rate $r_u$", fontsize=12)
