@@ -73,9 +73,9 @@ The plot will display \(\hat{\Gamma}_{\mathrm{eff}}\) vs \(\hat{\nu}\) for sever
 You can adjust the following in `main.py`:
 
 ```python
-k = 0.10                            # Surface energy ratio
+k = 0.10                            # E_\inft/E_0 known as madulus ratio
 n_list = [0.2, 0.4, 0.6, 0.8, 1.6]  # Power-law exponents to compare
-nu_min, nu_max = 1e-2, 1e8         # Range for dimensionless rate \hat{\nu}
+nu_min, nu_max = 1e-2, 1e8         # Range for dimensionless crack velocity \hat{\nu}
 num_points = 200                   # Number of samples per curve
 ```
 
